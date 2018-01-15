@@ -15,6 +15,13 @@ return A; // Undefined!
 $$ language plv8 stable;
 `;
 
+let difflangFunction = `\
+create function my_test_function(foo text, bar text) returns text as $$
+var a = "42";
+return A; // Undefined!
+$$ language difflang stable;
+`;
+
 let cli;
 beforeAll(() => {
   cli = new CLIEngine({
@@ -37,6 +44,15 @@ test("should run on .sql files", () => {
   const report = cli.executeOnText(simpleFunction, "test.sql");
 
   expect(report.results).toHaveLength(1);
+  expect(report.results[0].errorCount).toEqual(1);
   expect(report.results[0].messages[0].message).toEqual(`'A' is not defined.`);
   expect(sanitise(report.results)).toMatchSnapshot();
+});
+
+test("should not match 'difflang' function", () => {
+  const report = cli.executeOnText(difflangFunction, "test.sql");
+
+  expect(report.results).toHaveLength(1);
+  expect(report.results[0].errorCount).toEqual(0);
+  expect(report.results[0].messages).toHaveLength(0);
 });
