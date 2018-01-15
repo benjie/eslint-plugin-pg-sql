@@ -35,5 +35,9 @@
   },
   "dependencies": {
     "pg-query-native": "^1.1.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "processor.js"
+  ]
 }
