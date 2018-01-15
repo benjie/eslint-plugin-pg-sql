@@ -1,0 +1,28 @@
+{
+  "name": "eslint-plugin-pg-sql",
+  "version": "0.1.0",
+  "description": "ESLint plugin for linting PLV8 (JavaScript) functions within SQL files",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjie/eslint-plugin-pg-sql.git"
+  },
+  "keywords": [
+    "eslint",
+    "postgresql",
+    "postgres",
+    "pg",
+    "psql",
+    "plv8",
+    "sql"
+  ],
+  "author": "Benjie Gillam <code@benjiegillam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjie/eslint-plugin-pg-sql/issues"
+  },
+  "homepage": "https://github.com/benjie/eslint-plugin-pg-sql#readme"
+}
