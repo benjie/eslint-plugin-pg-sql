@@ -45,8 +45,9 @@ function preprocess(text) {
 
       if (asOption && language === "plv8") {
         const code = asOption.DefElem.arg[0].String.str;
+        const fnName = statement.funcname.map(n => n.String.str).join("__");
         blocks.push(`\
-(function (${argumentNames.join(", ")}) {
+(function ${fnName}(${argumentNames.join(", ")}) {
 ${code}
 })();
 `);
