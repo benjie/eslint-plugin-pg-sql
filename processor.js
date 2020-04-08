@@ -12,7 +12,7 @@ function excludeUnsatisfiableRules(message) {
 
 function findOption(statement, optionName) {
   return statement.options.find(
-    option => option.DefElem && option.DefElem.defname === optionName
+    (option) => option.DefElem && option.DefElem.defname === optionName
   );
 }
 
@@ -39,13 +39,15 @@ function preprocess(text) {
       const asOption = findOption(statement, "as");
       const languageOption = findOption(statement, "language");
       const language = languageOption && languageOption.DefElem.arg.String.str;
-      const argumentNames = Array.isArray(statement.parameters) ?
-        statement.parameters.filter(param => param.FunctionParameter.mode === 105)
-        .map((param, i) => param.FunctionParameter.name || `$${i + 1}`) : [];
+      const argumentNames = Array.isArray(statement.parameters)
+        ? statement.parameters
+            .filter((param) => param.FunctionParameter.mode === 105)
+            .map((param, i) => param.FunctionParameter.name || `$${i + 1}`)
+        : [];
 
       if (asOption && language === "plv8") {
         const code = asOption.DefElem.arg[0].String.str;
-        const fnName = statement.funcname.map(n => n.String.str).join("__");
+        const fnName = statement.funcname.map((n) => n.String.str).join("__");
         blocks.push(`\
 (function ${fnName}(${argumentNames.join(", ")}) {
 ${code}

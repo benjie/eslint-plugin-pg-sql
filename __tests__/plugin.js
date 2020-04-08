@@ -2,7 +2,7 @@ const CLIEngine = require("eslint").CLIEngine;
 const plugin = require("..");
 
 function sanitise(results) {
-  return results.map(result => ({
+  return results.map((result) => ({
     ...result,
     filePath: "[snip]",
   }));
