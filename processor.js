@@ -39,9 +39,9 @@ function preprocess(text) {
       const asOption = findOption(statement, "as");
       const languageOption = findOption(statement, "language");
       const language = languageOption && languageOption.DefElem.arg.String.str;
-      const argumentNames = statement.parameters
-        .filter(param => param.FunctionParameter.mode === 105)
-        .map((param, i) => param.FunctionParameter.name || `$${i + 1}`);
+      const argumentNames = Array.isArray(statement.parameters) ?
+        statement.parameters.filter(param => param.FunctionParameter.mode === 105)
+        .map((param, i) => param.FunctionParameter.name || `$${i + 1}`) : [];
 
       if (asOption && language === "plv8") {
         const code = asOption.DefElem.arg[0].String.str;
