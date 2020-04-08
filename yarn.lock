@@ -2204,8 +2204,8 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
 nwmatcher@^1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/nwmatcher/-/nwmatcher-1.4.3.tgz#64348e3b3d80f035b40ac11563d278f8b72db89c"
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/nwmatcher/-/nwmatcher-1.4.4.tgz#2285631f34a95f0d0395cd900c96ed39b58f346e"
 
 oauth-sign@~0.8.1, oauth-sign@~0.8.2:
   version "0.8.2"
@@ -2369,9 +2369,9 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-pg-query-native@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/pg-query-native/-/pg-query-native-1.1.0.tgz#1b645b1ab1a5a33563d6f90969caffc419744372"
+pg-query-native@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/pg-query-native/-/pg-query-native-1.2.0.tgz#4373c2ce6bb40b62fa8160cca9b364fd1a76c37e"
   dependencies:
     bindings "^1.2.1"
     nan "^2.3.5"
