@@ -737,8 +737,8 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
 
 diff@^3.2.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/diff/-/diff-3.4.0.tgz#b1d85507daf3964828de54b37d0d73ba67dda56c"
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
 
 doctrine@^2.0.2:
   version "2.1.0"
@@ -2369,9 +2369,9 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-pg-query-native@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/pg-query-native/-/pg-query-native-1.1.0.tgz#1b645b1ab1a5a33563d6f90969caffc419744372"
+pg-query-native@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/pg-query-native/-/pg-query-native-1.2.0.tgz#4373c2ce6bb40b62fa8160cca9b364fd1a76c37e"
   dependencies:
     bindings "^1.2.1"
     nan "^2.3.5"
