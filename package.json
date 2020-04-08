@@ -27,7 +27,7 @@
   "homepage": "https://github.com/benjie/eslint-plugin-pg-sql#readme",
   "devDependencies": {
     "babel-eslint": "8.2.1",
-    "eslint": "4.15.0",
+    "eslint": "4.18.2",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-prettier": "2.4.0",
     "jest": "22.1.1",
