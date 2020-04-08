@@ -2369,9 +2369,9 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-pg-query-native@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/pg-query-native/-/pg-query-native-1.1.0.tgz#1b645b1ab1a5a33563d6f90969caffc419744372"
+pg-query-native@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/pg-query-native/-/pg-query-native-1.2.0.tgz#4373c2ce6bb40b62fa8160cca9b364fd1a76c37e"
   dependencies:
     bindings "^1.2.1"
     nan "^2.3.5"
@@ -2838,8 +2838,8 @@ string_decoder@~1.0.3:
     safe-buffer "~5.1.0"
 
 stringstream@~0.0.4, stringstream@~0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.6.tgz#7880225b0d4ad10e30927d167a1d6f2fd3b33a72"
 
 strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
